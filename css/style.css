@@ -8,16 +8,19 @@ a{
 }
 body{
     font-family: "Roboto",sans-serif;
+    /*overflow: hidden;*/
 }
 .container{
-    width: 1140px;
+    width: 90%;
     margin: 0 auto;
     padding: 50px;
+    overflow: hidden;
 
 }
 
 
 #header {
+    overflow: hidden;
     padding: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
@@ -78,15 +81,16 @@ body{
 }
 .hero{
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
 }
 .hero-title{
+
     animation: hero-title 3s ease-in-out;
 }
 @keyframes hero-title {
     0%{
-    transform:translateY(500px);
+        transform:translateX(-500px);
     }
 }
 .hero-title h1{
@@ -97,7 +101,7 @@ body{
 
 }
 .hero-title h1 span{
-   color:  #EE4248;
+    color:  #EE4248;
 
 }
 .hero-title p{
@@ -108,14 +112,14 @@ body{
     padding: 30px 0;
 }
 .hero-title button{
-    width: 161px;
+    width: 150px;
     height: 53px;
     background: #EE4248;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     font-weight: 400;
     font-size: 20px;
-     color: #FFFFFF;
+    color: #FFFFFF;
     transition: .4s;
 }
 .hero-btn:hover {
@@ -130,90 +134,50 @@ body{
 
 }
 @keyframes hero-img  {
-    0%{        transform: translateY(500px);
+    0%{        transform: translateX(500px);
     }
 
 }
 #blocks{
-    width: 1440px;
-    height: 500px;
-    left: 0px;
-    top: 751px;
-
-    background: #F7F7F7;
-}
-
-.section{
     display: flex;
     justify-content:space-between ;
     align-items: center;
-
+    background: #F6F6F6;
 }
-#blocks{
-    display: flex;
-    justify-content:space-between ;
+.blocks-img{
+    display:flex;
     align-items: center;
-
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 50px;
 }
 .blocks h1{
     font-weight: 500;
     font-size: 32px;
     line-height: 133.69%;
     color: #1F2E35;
-    padding: 0 100px;
-    padding-bottom: 25px;
+        padding-bottom: 25px;
 }
 
 .blocks h1 span{
     color: red;
 }
 .blocks p{
-    padding: 0 100px;
-    padding-bottom: 100px;
-
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #30444E;
 }
 .blocks p span{
     color: red;
 }
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.comp{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 50px;
-}
-.comp{
-    animation: comp 3s ease-in-out;
-}
-@keyframes comp {
-    0%{
-        transform: translateY(-500px);
-    }
-}
-.img-hero{
-    animation: comp 3s ease-in-out;
-}
-@keyframes img-hero {
-    0%{
-        transform: translateX(-500px);
-    }
+.blocks{
+    padding-top: 100px;
 }
 
 
-/*.container1 {*/
-/*    !*display: flex;*!*/
-/*    !*align-items: center;*!*/
-/*    !*justify-content: space-between;*!*/
 
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    padding: 100px 0;*/
-/*    flex-direction: row;*/
+
 
 .heand{
     animation: heand 3s ease-in-out;
@@ -223,13 +187,13 @@ body{
         transform: translateX(-500px);
     }
 }
-#heand h1   {
+#heand h1{
     font-weight: 500;
     font-size: 32px;
     padding: 45px;
     text-align: center;
-
     color: #1F2E35;
+    overflow: hidden;
 
 }
 .heand h2{
@@ -244,41 +208,46 @@ body{
     color: #30444E;
     padding: 30px 0;
 }
-.button title:hover{
+.button:hover{
     display: flex;
     justify-content:space-between ;
     align-items: center;
     transition: .4s;
 
 }
+.heand-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 .heand p{
     padding-bottom: 10px;
 }
-.title {
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFFFFF;
-    width: 119px;
-    height: 42px;
+.heand button{
+    width: 150px;
+    height: 53px;
     background: #EE4248;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: .4s;
 }
 #backs {
-    width: 1126px;
+    width: 90%;
     height: 188px;
     left: 157px;
     top: 1893px;
-
     background: #FFFFFF;
     padding: 100px;
 }
 
-.back{
+.bask{
     display: flex;
-    align-items:flex-end;
+    align-items: center;
     justify-content: space-between;
     width: 650px;
 
@@ -313,7 +282,7 @@ body{
 }
 #footer{
     background: #EE4248;
-    height: 90px;
+    height: 180px;
 }
 .footer{
     display: flex;
@@ -324,9 +293,5 @@ body{
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
-
-
-
-
